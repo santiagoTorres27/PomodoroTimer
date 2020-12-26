@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pomodoro Timer</string>
+    <string name="tv_logo">Pomodoro Timer</string>
+    <string name="tv_numero_pomodoro">¿Cuántos pomodoros deseas realizar?</string>
+    <string name="tv_fin">¡Enhorabuena! has finalizado tu tarea ¿Quieres iniciar una nueva?</string>
+    <string name="tv_info">Pulsa aquí para más información</string>
+
+    <string name="txt_info1">La técnica Pomodoro fue creada en los años 80 por Francesco Cirillo porque vio la necesidad de encontrar un método de estudio en el que pudiese gestionar y administrar el tiempo que dedicaba a cada tarea</string>
+    <string name="txt_info2">Se basa en usar un temporizador para dividir el tiempo en intervalos fijos, llamados pomodoros, de 25 minutos de actividad, seguidos de 5 minutos de descanso, con pausas más largas cada cuatro pomodoros</string>
+    <string name="txt_info3">La Técnica Pomodoro se llama así por la forma de tomate del clásico reloj de cocina que usó el creador de la técnica, el italiano Francesco Cirillo, cuando era un estudiante universitario (pomodoro significa tomate en italiano)</string>
+    <string name="tv_periodos_completados">%1$d/%2$d períodos completados</string>
+</resources>

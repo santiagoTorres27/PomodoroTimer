@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242B3B"
+    tools:context=".FinalActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="¡Lo has conseguido!"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".1" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvFin"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center_horizontal"
+        android:text="@string/tv_fin"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSetTime"
+        style="@style/ButtonStraight"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:letterSpacing=".2"
+        android:onClick="restart"
+        android:text="Reiniciar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFin" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/tv_info"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="goInformation"
+        app:layout_constraintTop_toBottomOf="@id/btnSetTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

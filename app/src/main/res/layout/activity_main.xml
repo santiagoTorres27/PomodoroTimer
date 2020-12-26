@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242B3B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Pomodoro Timer"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".1" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/tv_numero_pomodoro"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img1" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider"
+        android:layout_width="327dp"
+        android:layout_height="31dp"
+        android:contentDescription="Slider"
+        android:stepSize="1.0"
+        android:value="4"
+        android:valueFrom="4"
+        android:valueTo="8"
+        app:haloColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNumero"
+        app:trackColor="@color/primary"
+        app:trackColorInactive="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSetTime"
+        style="@style/ButtonStraight"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:letterSpacing=".2"
+        android:onClick="start"
+        android:text="Iniciar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slider" />
+
+    <!--
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCancel"
+        style="@style/ButtonOutlined"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:text="Mas información"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSetTime"/>
+        -->
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/tv_info"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="goInformation"
+        app:layout_constraintTop_toBottomOf="@id/btnSetTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
